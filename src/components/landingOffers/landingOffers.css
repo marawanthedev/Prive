@@ -1,0 +1,83 @@
+  @font-face {
+      font-family: haboro;
+      src: url("../../assets/fonts/haborocontrastnormregular.otf");
+  }
+
+  .landing-offers {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .landing-offer {
+      display: flex;
+      width: 100%;
+      height: 45rem;
+      margin-bottom: 10rem;
+      overflow: hidden;
+  }
+
+  .landing-offer:nth-of-type(odd) {
+      flex-direction: row;
+  }
+
+  .landing-offer:nth-of-type(even) {
+      flex-direction: row-reverse;
+  }
+
+
+  .landing-offer:not(:first-of-type) .right-side img {
+      margin-left: 0;
+  }
+
+
+  .landing-offer .left-side {
+      width: 60%;
+      font-family: haboro;
+      margin: 0 1.25%;
+  }
+
+  /* .landing-offer:nth-of-type(even) .left-side {
+      width: 65%;
+  }
+
+  .landing-offer:nth-of-type(even) .right-side {
+      width: 35%;
+  } */
+
+  .left-side Button {
+      margin-top: 2rem;
+      align-self: start;
+      margin-left: 3rem;
+  }
+
+  .landing-offer .left-side .text {
+
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+      color: #3E3E3E;
+      width: 40rem;
+      margin-top: 2rem;
+      margin-left: 3rem;
+
+
+  }
+
+  .landing-offer .right-side {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      margin: 0 1.25%;
+
+  }
+
+  .landing-offer .right-side img {
+
+      width: 100%;
+      height: 100%;
+
+  }

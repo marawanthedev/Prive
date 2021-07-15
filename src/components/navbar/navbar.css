@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: IvySansSemi;
+    src: url("../../assets/fonts/IvyStyleSans-SemiBold.ttf");
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 20;
+    height: 8rem;
+    background-color: white;
+    padding: 0 5rem;
+    align-items: center;
+    font-family: IvySansSemi;
+}
+
+
+
+.navbar__side {
+    height: 100%;
+    width: 50%;
+}
+
+.navbar__side__right__logo {
+    width: 13rem;
+    height: 5rem;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 1.6rem;
+}
+
+.navbar__side__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__side__left__contact-number {
+    font-size: 2rem;
+}
+
+.navbar__side__left__buttons-container {
+    display: flex;
+    width: 30rem;
+    align-items: center;
+    margin-left: 3.7rem;
+    margin-right: 2rem;
+}
+
+.navbar__side__left__buttons-container__item {
+    margin-right: 3rem;
+}

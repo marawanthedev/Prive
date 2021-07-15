@@ -1,0 +1,68 @@
+@font-face {
+font-family: haboro;
+src: url("../../assets/fonts/haborocontrastnormregular.otf");
+}
+.landingHeader {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.landingHeader__side {
+    width: 50%;
+    height: 100%;
+}
+
+.landingHeader__side__left {
+    background-color: #f6c6d2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingHeader__side__left__text {
+    position: absolute;
+}
+
+.landingHeader__side__left__text__upper {
+    top: 15rem;
+}
+
+.landingHeader__side__left__text__lower {
+    top: 15rem;
+    right: -22rem;
+    transform: rotate(-2deg);
+}
+
+.landingHeader__side__left__button {
+    position: absolute;
+    bottom: 11rem;
+    left: 26rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family: haboro;
+
+}
+
+.landingHeader__side__left__button img {
+    margin-left: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.landingHeader__side__left__button:hover img {
+    transform: translateX(0.5rem);
+}
+
+.landingHeader__side__right {
+    background-position: center;
+    background-size: cover;
+}
