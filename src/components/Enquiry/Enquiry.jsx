@@ -1,5 +1,5 @@
-import "./landingEnquiry.css"
-import Button from "../../components/button/button"
+import "./Enquiry.css"
+import Button from "../button/button"
 
 const landingEnquiry = () => {
     return (

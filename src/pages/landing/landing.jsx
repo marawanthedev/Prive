@@ -1,10 +1,10 @@
 import React from 'react';
 import Template from "../../components/template/template"
-import LandingHeader from "../../components/landingHeader/landingHeader"
+import LandingHeader from "../../components/Header/Header"
 import "./landing.css"
-import LandingEnquiry from "../../components/landingEnquiry/landingEnquiry"
-import LandingAboutUs from "../../components/landingAboutUs/landingAboutUs"
-import LandingOffers from "../../components/landingOffers/landingOffers"
+import LandingEnquiry from "../../components/Enquiry/Enquiry"
+import LandingAboutUs from "../../components/AboutUs/AboutUs"
+import LandingOffers from "../../components/Offers/Offers"
 import LandingTestimonals from "../../components/testimonals/testimonals"
 import LandingVideos from "../../components/videos/videos"
 class LandingPage extends React.PureComponent {

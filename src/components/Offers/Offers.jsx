@@ -1,9 +1,9 @@
 
-import "./landingOffers.css"
+import "./Offers.css"
 import DermalImg from "../../assets/svg/offers/images/DentalFillers.svg"
 import FacialImg from "../../assets/svg/offers/images/FacialTreatments.svg"
 import PersonalImg from "../../assets/svg/offers/images/PersonalCare.svg"
-import Button from "../../components/button/button"
+import Button from "../button/button"
 import DermalFillers from "../../assets/svg/offers/text/Dermal Fillers.svg"
 import FacialTreatments from "../../assets/svg/offers/text/Facial Treatments.svg"
 import PersonalCare from "../../assets/svg/offers/text/Personal Care.svg"

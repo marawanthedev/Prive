@@ -1,8 +1,8 @@
-
 @font-face {
     font-family: IvySansSemi;
     src: url("../../assets/fonts/IvyStyleSans-SemiBold.ttf");
 }
+
 .navbar {
     position: absolute;
     top: 0;
@@ -10,7 +10,7 @@
     display: flex;
     width: 100%;
     z-index: 20;
-    height: 8rem;
+    height: 9rem;
     background-color: white;
     padding: 0 5rem;
     align-items: center;

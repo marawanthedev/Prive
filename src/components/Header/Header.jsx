@@ -1,4 +1,4 @@
-import "./landingHeader.css";
+import "./Header.css";
 import LandingHeaderImg from "../../assets/svg/landingHeader.svg"
 import LandingHeaderUpperText from "../../assets/svg/landingHeaderUpperText.svg"
 import LandingHeaderLowerText from "../../assets/svg/landingHeaderLowerText.svg"

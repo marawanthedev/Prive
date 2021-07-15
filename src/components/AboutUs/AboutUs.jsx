@@ -1,8 +1,8 @@
 
 import LandingAboutUsImg from "../../assets/svg/landingaboutus.svg"
-import "./landingAboutUs.scss"
+import "./AboutUs.scss"
 import Button from "../button/button"
-
+import AboutUsTextImg from "../../assets/svg/AboutUsText.svg"
 const LandingAboutUs = () => {
 
     return (
@@ -18,7 +18,7 @@ const LandingAboutUs = () => {
 
                 <div className="text-content">
 
-                    <h2 className="header">About Us</h2>
+                    <h2 className="header"> <img src={AboutUsTextImg} alt="" /> </h2>
                     <p className="paragraph">
                         Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt molestie. Maecenas ex ante, ultrices a dolor et, volutpat elementum dui. Phasellus ullamcorper pharetra sapien, vitae dapibus ante ullamcorper vel. Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt molestie. Maecenas ex ante, ultrices a dolor et, volutpat elementum dui. Phasellus ullamcorper pharetra sapien, vitae dapibus ante ullamcorper vel.
                         Maecenas ex ante, ultrices a dolor et, volutpat elementum dui. Phasellus ullamcorper pharetra sapien, vitae dapibus ante ullamcorper vel.

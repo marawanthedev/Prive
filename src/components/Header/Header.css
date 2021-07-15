@@ -1,14 +1,15 @@
 @font-face {
-font-family: haboro;
-src: url("../../assets/fonts/haborocontrastnormregular.otf");
+    font-family: haboro;
+    src: url("../../assets/fonts/haborocontrastnormregular.otf");
 }
+
 .landingHeader {
     width: 100%;
     height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 .landingHeader__side {
@@ -21,8 +22,7 @@ src: url("../../assets/fonts/haborocontrastnormregular.otf");
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .landingHeader__side__left__text {
@@ -31,18 +31,19 @@ src: url("../../assets/fonts/haborocontrastnormregular.otf");
 
 .landingHeader__side__left__text__upper {
     top: 15rem;
+    left: 10rem;
 }
 
 .landingHeader__side__left__text__lower {
-    top: 15rem;
-    right: -22rem;
+    top: 16.5rem;
+    left: 22rem;
     transform: rotate(-2deg);
 }
 
 .landingHeader__side__left__button {
     position: absolute;
-    bottom: 11rem;
-    left: 26rem;
+    bottom: 9rem;
+    left: 10rem;
     border: none;
     background-color: transparent;
     outline: none;
