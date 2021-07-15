@@ -12,9 +12,9 @@ import * as Input from "../fields/input";
 import Button from "../fields/button";
 
 // Assets
-import MailImg from "../../assets/icons/mail-green.svg";
-import InstaImg from "../../assets/icons/insta-green.svg";
-import FacebookImg from "../../assets/icons/facebook-green.svg";
+import MailImg from "../../assets/svg/email.svg";
+import InstaImg from "../../assets/svg/instagram.svg";
+import FacebookImg from "../../assets/svg/facebook.svg";
 
 const global = {
     primary: "#77CFD2",

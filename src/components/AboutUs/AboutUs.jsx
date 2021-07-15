@@ -1,5 +1,5 @@
 
-import LandingAboutUsImg from "../../assets/svg/landingaboutus.svg"
+import LandingAboutUsImg from "../../assets/images/Aboutus.png"
 import "./AboutUs.scss"
 import Button from "../button/button"
 import AboutUsTextImg from "../../assets/svg/AboutUsText.svg"

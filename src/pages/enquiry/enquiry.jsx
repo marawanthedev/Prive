@@ -1,8 +1,12 @@
 
+import EnquiryFrom from "../../components/form/form"
+const EnquiryPage = () => {
 
-const enquiry = () => {
-    
     return (
-        <div></div>
+        <div>
+            <EnquiryFrom></EnquiryFrom>
+        </div>
     )
 }
+
+export default EnquiryPage;

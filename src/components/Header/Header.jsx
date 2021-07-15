@@ -1,5 +1,5 @@
 import "./Header.css";
-import LandingHeaderImg from "../../assets/svg/landingHeader.svg"
+import LandingHeaderImg from "../../assets/images/HeaderImg.png"
 import LandingHeaderUpperText from "../../assets/svg/landingHeaderUpperText.svg"
 import LandingHeaderLowerText from "../../assets/svg/landingHeaderLowerText.svg"
 import ButtonArrow from "../../assets/svg/Arrow 1.svg"

@@ -9,7 +9,7 @@ import Calendar from 'react-calendar';
 // import daysInMonth from '../../../functions/daysInMonth';
 
 // Assets
-import ChevronImg from "../../../assets/icons/chevron.svg";
+import ChevronImg from "../../../assets/svg/chevron.svg";
 
 // Styles
 // import global from '../../../var';

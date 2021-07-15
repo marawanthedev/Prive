@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import global from '../../../var';
 
+const global = {
+    primary: "#77CFD2",
+    secondary: "#FD93DB",
+    tertiary: "#BEA960"
+}
 const ButtonComp = styled.button`
     font-family: "ainslie-sans", 'Segoe UI', 'Roboto', 'Oxygen';        
     font-weight: 600;
@@ -70,12 +74,12 @@ const ButtonComp = styled.button`
     }
 `
 
-function Button({color, size, children, handleClick}){
+function Button({ color, size, children, handleClick }) {
     const classCon = `${color} ${size}`;
 
-    return(
+    return (
         <ButtonComp className={classCon} onClick={handleClick}> {children} </ButtonComp>
     )
 }
 
-export default Button; 
+export default Button;
