@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import Logo from "../../assets/svg/logo.svg";
 import Button from "../button/button";
+import { Link } from "react-router-dom"
 const NavBar = () => {
     return (
         <div className="navbar">
@@ -15,7 +16,9 @@ const NavBar = () => {
                 <div className="navbar__side__left__contact-number">0333 674 7590</div>
                 <div className="navbar__side__left__buttons-container">
                     <div className="navbar__side__left__buttons-container__item">
-                        <Button textContent="Book consultation" isPrimary={true}></Button>
+                        <Link to="/enquiry">
+                            <Button textContent="Book consultation" isPrimary={true}></Button>
+                        </Link>
                     </div>
                     <div className="navbar__side__left__buttons-container__item">
                         <Button textContent="See Treatments" isPrimary={false}></Button>

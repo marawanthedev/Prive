@@ -1,5 +1,6 @@
 import "./Enquiry.css"
 import Button from "../button/button"
+import { Link } from "react-router-dom"
 
 const landingEnquiry = () => {
     return (
@@ -13,7 +14,9 @@ const landingEnquiry = () => {
             <div className="enquiry__statement">
                 Feel the Prive effect today
             </div>
-            <Button textContent="Enquire now" isPrimary={false}></Button>
+            <Link to="/enquiry">
+                <Button textContent="Enquire now" isPrimary={false}></Button>
+            </Link>
         </div>
     )
 }

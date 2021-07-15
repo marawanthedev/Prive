@@ -23,6 +23,13 @@ const global = {
 }
 
 const Section = styled.section`
+display:flex;
+flex-direction:coloumn;
+justify-content:center;
+width:80%;
+height:80rem;
+padding:10rem 5rem;
+border:1px solid black;
     button {
         display: block;
         margin: 0 auto;

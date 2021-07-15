@@ -9,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .landingHeader__side {
@@ -32,12 +31,26 @@
 .landingHeader__side__left__text__upper {
     top: 15rem;
     left: 10rem;
+
+
 }
+
+
 
 .landingHeader__side__left__text__lower {
     top: 16.5rem;
     left: 22rem;
     transform: rotate(-2deg);
+}
+
+.landingHeader__side__left__text__upper img {
+    /* width is set so it can easily get minifed in smaller screens using html font size */
+    width: 35rem;
+}
+
+.landingHeader__side__left__text__lower img {
+    /* width is set so it can easily get minifed in smaller screens using html font size */
+    width: 65rem;
 }
 
 .landingHeader__side__left__button {
@@ -51,7 +64,6 @@
     font-size: 1.6rem;
     cursor: pointer;
     font-family: haboro;
-
 }
 
 .landingHeader__side__left__button img {

@@ -23,7 +23,7 @@ class LandingPage extends React.PureComponent {
                     <LandingEnquiry></LandingEnquiry>
                     <LandingAboutUs></LandingAboutUs>
                     <LandingOffers></LandingOffers>
-                    {/* <LandingTestimonals></LandingTestimonals> */}
+                    <LandingTestimonals></LandingTestimonals>
                     <LandingVideos></LandingVideos>
                 </div>
 

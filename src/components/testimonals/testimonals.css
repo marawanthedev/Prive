@@ -1,0 +1,42 @@
+.testimonals-container {
+    position: relative;
+    width: 80%;
+    height: 40rem;
+    z-index: 3;
+    margin-bottom: 10rem;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 10;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: rgb(255, 249, 249);
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 15px;
+    color: #EB3737;
+}
+
+.arrow {
+    top: 16rem;
+    z-index: 100;
+}
+
+.prevArrow {
+    left: 12.5rem;
+}
+
+.nextArrow {
+    right: 12.5rem;
+}

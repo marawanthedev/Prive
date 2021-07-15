@@ -10,17 +10,6 @@ import HomeImg5 from "../../assets/svg/results/result-5.svg";
 import HomeImg6 from "../../assets/svg/results/result-6.svg";
 import HomeImg7 from "../../assets/svg/results/result-7.svg";
 
-
-// import HomeImg3 from "../../assets/images/home-3.png";
-// import HomeImg4 from "../../assets/images/home-4.png";
-// import HomeImg5 from "../../assets/images/home-5.png";
-// import HomeImg6 from "../../assets/images/home-6.png";
-// import HomeImg7 from "../../assets/images/home-7.png";
-// import HomeImg8 from "../../assets/images/home-8.png";
-
-// import PauseImg from "../../assets/icons/pause.png";
-// import PlayImg from "../../assets/icons/play.png";
-
 const Section = styled.section`
 width:120rem;
 display:flex;

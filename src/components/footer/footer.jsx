@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "../../assets/svg/facebook.svg";
 import InstagramIcon from "../../assets/svg/instagram.svg";
 import EmailIcon from "../../assets/svg/email.svg"
+
 import "./footer.scss";
 const Footer = () => {
     return (
@@ -13,14 +14,14 @@ const Footer = () => {
                         <h4>Prive</h4>
                         <ul>
                             <li>
-                                <Link to="">About us</Link>
+                                <a href="#aboutus">About us</a>
                             </li>
                             <li>
                                 <Link to="">Price List</Link>
 
                             </li>
                             <li>
-                                <Link to="">Enquire Now</Link>
+                                <Link to="/enquiry">Enquire Now</Link>
                             </li>
 
                         </ul>
