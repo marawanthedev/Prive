@@ -7,7 +7,7 @@ import Button from "../button/button"
 import DermalFillers from "../../assets/svg/offers/text/Dermal Fillers.svg"
 import FacialTreatments from "../../assets/svg/offers/text/Facial Treatments.svg"
 import PersonalCare from "../../assets/svg/offers/text/Personal Care.svg"
-
+import sideRectangle from "../../assets/svg/sideRectangle.svg"
 const LandingOffers = () => {
 
 
@@ -43,6 +43,7 @@ const LandingOffers = () => {
                 return (
                     <div className="landing-offer">
 
+
                         <div className="left-side">
                             <div className="title"> <img src={offer.textImg} alt="" /> </div>
                             <p className="text">{offer.text}</p>
@@ -51,6 +52,7 @@ const LandingOffers = () => {
                         <div className="right-side">
 
                             <img src={offer.img} alt="" className="img" />
+                            <img className="side-rectangle" src={sideRectangle} alt="" />
                         </div>
                     </div>
                 )
