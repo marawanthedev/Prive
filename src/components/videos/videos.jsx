@@ -12,6 +12,7 @@ import HomeImg7 from "../../assets/svg/results/result-7.svg";
 
 const Section = styled.section`
 width:120rem;
+margin:7.5rem 0;
 display:flex;
             justify-content:center;
             align-items:center;

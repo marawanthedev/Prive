@@ -15,21 +15,21 @@
     text-align: center;
     cursor: pointer;
     font-family: IvySansSemi;
+}
 
-    &__primary {
-        color: white;
-        background-color: #eb3737;
-    }
+.button__primary {
+    color: white;
+    background-color: #eb3737;
+}
 
-    &__secondary {
-        color: #eb3737;
-        background-color: white;
-        border: 2px solid #eb3737;
-    }
+.button__secondary {
+    color: #eb3737;
+    background-color: white;
+    border: 2px solid #eb3737;
+}
 
-    &__tertiary {
-        color: white;
-        border: 2px solid white;
-        background-color: transparent;
-    }
+.button__tertiary {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
 }

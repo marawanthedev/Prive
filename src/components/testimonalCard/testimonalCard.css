@@ -6,15 +6,15 @@
     flex-direction: column;
     align-items: center;
     padding: 10rem 0;
+}
 
-    &__author {
-        font-size: 2.2rem;
-        line-height: 3.3rem;
-    }
+.testimonal-card__author {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
 
-    &__text {
-        font-size: 3.4rem;
-        width: 70%;
-        text-align-last: center;
-    }
+.testimonal-card__text {
+    font-size: 3.4rem;
+    width: 70%;
+    text-align-last: center;
 }

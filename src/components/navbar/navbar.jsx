@@ -7,10 +7,12 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <div className=" navbar__side navbar__side__right">
-                <div
-                    className="navbar__side__right__logo"
-                    style={{ backgroundImage: `url(${Logo})` }}
-                ></div>
+                <Link to="/">
+                    <div
+                        className="navbar__side__right__logo"
+                        style={{ backgroundImage: `url(${Logo})` }}
+                    ></div>
+                </Link>
             </div>
             <div className=" navbar__side navbar__side__left">
                 <div className="navbar__side__left__contact-number">0333 674 7590</div>

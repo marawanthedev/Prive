@@ -1,5 +1,5 @@
 import React from "react";
-import "./template.scss";
+import "./template.css";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 const Template = (props) => {

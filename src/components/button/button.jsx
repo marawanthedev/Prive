@@ -1,4 +1,4 @@
-import "./button.scss";
+import "./button.css";
 
 const Button = (props) => {
   const { textContent, type, isPrimary, tertiary } = props;

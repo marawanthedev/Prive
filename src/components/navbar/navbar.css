@@ -8,13 +8,14 @@
     bottom: 0;
     display: flex;
     width: 100%;
-    z-index: 220;
     height: 10rem;
     background-color: white;
     padding: 1.4rem 5rem;
     align-items: center;
     font-family: IvySansSemi;
     margin-bottom: 2rem;
+    z-index: 100000;
+
 }
 
 .navbar__side {

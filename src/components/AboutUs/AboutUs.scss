@@ -33,7 +33,6 @@
 
 }
 
-
 .landing-about-us .right-section .text-content .header {
     @font-face {
         src: url("../../assets/fonts/Santorini.otf");
@@ -47,6 +46,10 @@
     letter-spacing: .2rem;
     margin-top: 4rem;
 
+}
+
+.landing-about-us .right-section .text-content .header img {
+    margin-bottom: -2rem;
 }
 
 .landing-about-us .right-section .text-content .paragraph {

@@ -1,0 +1,91 @@
+.form-container {
+    width: 100%;
+    height: 135rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.5rem;
+    font-family: haboro;
+    overflow: hidden;
+}
+
+.form-thankyou-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #F6C6D2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.form-thankyou-overlay img {
+    margin-top: 15%;
+    margin-left: 25%;
+}
+
+.form-thankyou-overlay p {
+    margin-top: 2.73rem;
+    font-size: 2.2rem;
+    font-family: habo;
+    text-align: center;
+}
+
+.header {
+    font-size: 2.2rem;
+}
+
+.form {
+    width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(135rem - 66rem);
+    margin-top: 5rem;
+}
+
+.form-input {
+    width: 80rem;
+    height: 6rem;
+    border: 1px solid #000000;
+    margin-bottom: 1.5rem;
+}
+
+.form-input,
+.form-input::placeholder {
+    font-family: haboro;
+    font-size: 3rem;
+    padding-left: 1.5rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.form-text-area {
+    min-height: 30rem;
+    max-height: 30rem;
+}
+
+.form-text-area::placeholder {
+    padding-top: 1rem;
+}
+
+
+
+.form-button {
+    margin-top: 12.5rem;
+    width: 21rem;
+    height: 12rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    font-family: IvySansSemi;
+    color: rgba(235, 55, 55, 1);
+    background-color: white;
+    border: 1px solid rgba(235, 55, 55, 1);
+    font-weight: bolder;
+    padding: .75rem 0;
+}

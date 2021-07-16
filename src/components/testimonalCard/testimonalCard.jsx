@@ -1,5 +1,5 @@
 
-import "./testimonalCard.scss"
+import "./testimonalCard.css"
 
 const testimonalCard = ({ testimonial }) => {
     return (

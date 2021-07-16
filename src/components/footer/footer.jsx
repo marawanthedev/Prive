@@ -4,7 +4,7 @@ import FacebookIcon from "../../assets/svg/facebook.svg";
 import InstagramIcon from "../../assets/svg/instagram.svg";
 import EmailIcon from "../../assets/svg/email.svg"
 
-import "./footer.scss";
+import "./footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
