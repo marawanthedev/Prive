@@ -54,12 +54,16 @@ const Dropdown = styled.ul`
                 height: auto !important;
 
                 ul {
+                    margin-top:3rem;
                     display: block;
-    
+                    list-style:none;
                     li {
                         font-weight: 300; 
                         font-size: 2rem;
                         padding-bottom: 0;
+                        list-style:none;
+                        height:5rem;
+
                     }
                 }
             }
@@ -70,15 +74,14 @@ const Dropdown = styled.ul`
 
             & ul {
                 text-indent: 35px;
-
                 li {
                     border-bottom: none;
                     position: relative;
                     
                     input {
                         position: absolute;
-                        left: 14px;
-                        top: 5px; 
+                        left: 17px;
+                        top: 0px; 
                     }
                     
                     input::after{
@@ -86,10 +89,10 @@ const Dropdown = styled.ul`
                         width: 20px;
                         position: absolute;
                         height: 20px;
-                        border: 2px solid ${global.secondary};
+                        border: 2px solid #F6C6D2;
                         border-radius: 50%;
-                        left: -4px;
-                        top: 0px;
+                        left: -6px;
+                        top: -.5px;
                         background-color: white;
                     }
 

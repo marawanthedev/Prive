@@ -67,18 +67,11 @@ const CalendarInput = ({ onChange, name }) => {
     const numOfDays = daysInMonth(trueSelectedMonth, new Date().getFullYear());
     const [label, setLabel] = useState('Preferred Date');
     var date = new Date();
-    const monthFirstDay = new Date(date.getFullYear(), date.getMonth(), 1)
-    const monthLastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    console.log(monthFirstDay)
-    const disabledDates = [monthFirstDay, monthLastDay];
 
-    // function tileDisabled({ date, view }) {
-    //     // Disable tiles in month view only
-    //     if (view === 'month') {
-    //         // Check if a date React-Calendar wants to check is on the list of disabled dates
-    //         return disabledDates.find(dDate => isSameDay(dDate, date));
-    //     }
-    // }
+
+
+    const startDate = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
+    const endDate = new Date(new Date().getFullYear(), new Date().getMonth(), 31)
     useEffect(() => {
         let array = [];
 
@@ -123,7 +116,7 @@ const CalendarInput = ({ onChange, name }) => {
                     data-value={selectedDate}
                     onChange={setValue}
                     value={value}
-                    minDate={new Date()}
+
                     // @ts-ignore
                     name={name}
                 />
