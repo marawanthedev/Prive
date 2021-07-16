@@ -21,7 +21,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
 }
 
 .landingHeader__side__left__text {
@@ -31,11 +30,7 @@
 .landingHeader__side__left__text__upper {
     top: 15rem;
     left: 10rem;
-
-
 }
-
-
 
 .landingHeader__side__left__text__lower {
     top: 16.5rem;

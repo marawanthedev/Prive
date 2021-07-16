@@ -5,8 +5,13 @@ import Select from "../../components/treatmentDropDown/treatmentDropDown"
 import CalendarInput from "../../components/CalendarInput/calendarInput";
 import TimeInput from "../../components/timePicker/timePicker"
 import thankYouText from "../../assets/svg/thankYou.svg"
-import facebookIcon from "../../assets/svg/facebook.svg"
+import redFacebookIcon from "../../assets/svg/redFacebook.svg"
+import redInstagramIcon from "../../assets/svg/redInstagram.svg"
+import redEmailIcon from "../../assets/svg/redEmail.svg"
+
+
 import React, { useState } from 'react';
+
 
 const Form = () => {
     const [isSubmitted, setSubmissionStatus] = useState(false);
@@ -59,7 +64,20 @@ const Form = () => {
 
                 <button className="form-button" onClick={() => setSubmissionStatus(true)}>Submit Now</button>
 
+                <div className="form-socialmedia-bar">
 
+                    <a href="#">
+                        <img src={redEmailIcon} alt="" />
+                    </a>
+                    <a href="#">
+                        <img src={redInstagramIcon} alt="" />
+
+                    </a>
+                    <a href="#">
+                        <img src={redFacebookIcon} alt="" />
+
+                    </a>
+                </div>
             </div>
         </div>
     )
