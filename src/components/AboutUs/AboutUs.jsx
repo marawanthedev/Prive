@@ -1,5 +1,5 @@
 import LandingAboutUsImg from "../../assets/images/Aboutus.png";
-import "./AboutUs.scss";
+import "./AboutUs.css";
 import Button from "../button/button";
 import AboutUsTextImg from "../../assets/svg/AboutUsText.svg";
 import { Link } from "react-router-dom";

@@ -33,11 +33,10 @@
 
 }
 
+
+
 .landing-about-us .right-section .text-content .header {
-    @font-face {
-        src: url("../../assets/fonts/Santorini.otf");
-        font-family: santorini;
-    }
+
 
     font-size: 2.5rem;
     color: white;
@@ -52,11 +51,9 @@
     margin-bottom: -2rem;
 }
 
+
+
 .landing-about-us .right-section .text-content .paragraph {
-    @font-face {
-        font-family: haboro;
-        src: url("../../assets/fonts/haborocontrastnormregular.otf");
-    }
 
     font-size: 2rem;
     color: #FFFCFC;

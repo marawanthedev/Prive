@@ -69,9 +69,17 @@
 .react-calendar__navigation button {
     min-width: 44px;
     background: none;
-    font-size: 3.5rem;
+    font-size: rem;
     color: rgba(235, 55, 55, 1);
 
+}
+
+.react-calendar__navigation button:nth-of-type(1) {
+    display: none;
+}
+
+.react-calendar__navigation button:nth-of-type(5) {
+    display: none;
 }
 
 .react-calendar__navigation__label__labelText--from {
@@ -154,7 +162,7 @@
 }
 
 .react-calendar__tile--hasActive {
-    background: #76baff;
+    background: #eb3737;
 }
 
 .react-calendar__tile--hasActive:enabled:hover,
@@ -163,13 +171,13 @@
 }
 
 .react-calendar__tile--active {
-    background: #006edc;
+    background: #eb3737;
     color: white;
 }
 
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-    background: #1087ff;
+    background: #eb3737;
 }
 
 .react-calendar--selectRange .react-calendar__tile--hover {
