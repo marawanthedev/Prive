@@ -1,4 +1,3 @@
-
 import "./testimonalCard.css"
 
 const testimonalCard = ({ testimonial }) => {
@@ -9,4 +8,5 @@ const testimonalCard = ({ testimonial }) => {
         </div>
     )
 }
+
 export default testimonalCard;

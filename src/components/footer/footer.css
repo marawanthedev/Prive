@@ -12,11 +12,11 @@
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 }
 
 ul li a {
-    font-size: 16px;
+    font-size: 2rem;
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 400;
@@ -46,11 +46,11 @@ h4 {
 
 .social-links a {
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 1rem 1rem 0;
     text-align: center;
-    line-height: 40px;
+    line-height: 4rem;
     color: #ffffff;
     transition: all 0.5s ease;
 }
@@ -71,15 +71,44 @@ ul {
 
 /*responsivity*/
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
+        width: 20%;
+        /* margin-bottom: 30px; */
+    }
+    .footer {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .footer {
+        padding: 4rem 2rem;
+    }
+    .footer-col {
+        width: 25%;
+        /* margin-bottom: 30px; */
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 4rem 0rem;
+    }
+    /* .footer-col {
+        width: 15%;
+    } */
+    ul li a {
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 574px) {
     .footer-col {
-        width: 100%;
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+    .footer {
+        height: auto;
     }
 }

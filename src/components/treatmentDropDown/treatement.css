@@ -1,0 +1,16 @@
+.treatmentspan {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 5rem !important;
+    width: 100%;
+    font-size: 3rem;
+    padding-left: 3rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 700px) {
+    .treatmentspan {
+        height: 6rem !important;
+    }
+}

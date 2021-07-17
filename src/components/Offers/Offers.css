@@ -88,5 +88,5 @@
   }
 
   .landing-offer:nth-of-type(even) .right-side .side-rectangle {
-      left: -1.5rem;
+      left: .5rem;
   }

@@ -11,3 +11,37 @@
     position: absolute;
     margin-left: 21.66rem;
 }
+
+@media (max-width:800px) {
+    .enquiry-header img {
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width:725px) {
+    .enquiry-header img {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (max-width:570px) {
+    .enquiry-header img {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width:500px) {
+    .enquiry-header img {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (max-width:400px) {
+    .enquiry-header img {
+        width: 30rem;
+        height: 30rem;
+        margin-left: 5rem;
+    }
+}

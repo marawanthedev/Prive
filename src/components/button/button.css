@@ -33,3 +33,10 @@
     border: 2px solid white;
     background-color: transparent;
 }
+
+@media (max-width: 950px) {
+    .button {
+        width: 17.55rem;
+        font-size: 1.4rem;
+    }
+}

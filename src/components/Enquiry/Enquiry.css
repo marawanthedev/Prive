@@ -28,3 +28,19 @@
       color: #eb3737;
       margin-bottom: 2rem;
   }
+
+  @media (max-width:850px) {
+      .enquiry {
+          height: 40rem;
+      }
+  }
+
+  @media (max-width:500px) {
+      .enquiry {
+          height: 35.5rem;
+          font-size: 2rem;
+      }
+      .enquiry__paragraph {
+          width: 60%;
+      }
+  }

@@ -1,8 +1,8 @@
 
 import "./Offers.css"
-import DermalImg from "../../assets/svg/offers/images/DentalFillers.svg"
-import FacialImg from "../../assets/svg/offers/images/FacialTreatments.svg"
-import PersonalImg from "../../assets/svg/offers/images/PersonalCare.svg"
+import DermalImg from "../../assets/images/dentalFillers.png"
+import FacialImg from "../../assets/images/facialTreatment.png"
+import PersonalImg from "../../assets/images/PersonalCare.png"
 import Button from "../button/button"
 import DermalFillers from "../../assets/svg/offers/text/Dermal Fillers.svg"
 import FacialTreatments from "../../assets/svg/offers/text/Facial Treatments.svg"

@@ -39,12 +39,10 @@
 }
 
 .landingHeader__side__left__text__upper img {
-    /* width is set so it can easily get minifed in smaller screens using html font size */
     width: 35rem;
 }
 
 .landingHeader__side__left__text__lower img {
-    /* width is set so it can easily get minifed in smaller screens using html font size */
     width: 65rem;
 }
 
@@ -73,4 +71,247 @@
 .landingHeader__side__right {
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width: 1400px) {
+    .landingHeader__side__left__text__upper img {
+        /* width is set so it can easily get minifed in smaller screens using html font size */
+        width: 25rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        /* width is set so it can easily get minifed in smaller screens using html font size */
+        width: 55rem;
+    }
+    .landingHeader__side__left__text__upper {
+        top: 17rem;
+        left: 10rem;
+    }
+    .landingHeader__side__left__text__lower {
+        top: 18rem;
+        left: 22rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .landingHeader__side__left__text__upper img {
+        /* width is set so it can easily get minifed in smaller screens using html font size */
+        width: 25rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        /* width is set so it can easily get minifed in smaller screens using html font size */
+        width: 50rem;
+    }
+    .landingHeader__side__left__text__lower {
+        top: 18rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landingHeader__side__left__text__upper {
+        left: 8rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 18rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .landingHeader__side__left__text__upper {
+        left: 6rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 16rem;
+        top: 17rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .landingHeader__side__left__text__upper {
+        left: 6rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 16rem;
+        top: 17rem;
+    }
+    .landingHeader__side__left__text__upper img {
+        width: 30rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 55rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .landingHeader__side__left__text__lower {
+        top: 18rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .landingHeader__side__left__text__upper {
+        left: 4rem;
+        top: 12rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 15rem;
+        top: 17rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .landingHeader__side__left__text__upper {
+        left: 4rem;
+        top: 14rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 15rem;
+        top: 18rem;
+    }
+    .landingHeader__side__left__text__upper img {
+        width: 25rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 45rem;
+    }
+    .landingHeader__side__left__button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .landingHeader__side__left__text__upper {
+        left: 3rem;
+        top: 14rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 13rem;
+        top: 18rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .landingHeader__side__left__text__upper {
+        left: 3rem;
+        top: 14rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 13rem;
+        top: 18rem;
+    }
+    .landingHeader__side__left__text__upper img {
+        width: 20rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .landingHeader__side__left__text__upper {
+        left: 6rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 14rem;
+    }
+    .landingHeader__side__left__text__upper img {
+        width: 25rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 45rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .landingHeader__side__left__text__upper {
+        left: 4rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 12rem;
+    }
+}
+
+@media (max-width:770px) {
+    .landingHeader__side__left__text__upper img {
+        width: 22.5rem;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 42.5rem;
+    }
+}
+
+@media (max-width:750px) {
+    .landingHeader {
+        flex-direction: column;
+        height: 100rem;
+    }
+    .landingHeader__side {
+        width: 100%;
+    }
+    .landingHeader__side__left {
+        height: 80%;
+    }
+    .landingHeader__side__right {
+        height: 100%;
+    }
+    .landingHeader__side__left__text__upper {
+        left: 6rem;
+        top: 6rem;
+    }
+    .landingHeader__side__left__text__lower {
+        left: 8rem;
+        top: 10rem;
+    }
+    .landingHeader__side__left__text__upper img {
+        width: 50%;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 80%;
+    }
+    .landingHeader__side__left__button {
+        left: 45%;
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:500px) {
+    .landingHeader__side__left__text__lower img {
+        width: 90%;
+    }
+    .landingHeader__side__left__button {
+        left: 45%;
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:450px) {
+    .landingHeader__side__left__button {
+        font-size: 1.8rem;
+        bottom: 30%;
+        left: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    .landingHeader__side__left__text__upper img {
+        width: 45%;
+    }
+    .landingHeader__side__left__text__lower img {
+        width: 90%;
+    }
+    .landingHeader {
+        height: 90rem;
+    }
+    .landingHeader__side__left__button {
+        font-size: 1.6rem;
+        left: 45%;
+    }
+}
+
+@media (max-width:300px) {
+    .landingHeader__side__left__button {
+        left: 40%;
+    }
 }

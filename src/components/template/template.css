@@ -6,3 +6,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.mobile-navbar-container {
+    visibility: hidden;
+}
+
+
+@media (max-width: 850px) {
+    .mobile-navbar-container {
+        visibility: visible;
+    }
+}

@@ -16,12 +16,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 20;
 }
 
 .form-thankyou-overlay img {
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 10%;
+    margin-left: 30%;
 }
 
 .form-thankyou-overlay p {
@@ -44,8 +44,14 @@
     margin-top: 5rem;
 }
 
-.form-input {
+.form-input-container {
     width: 80rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-input {
+    width: 100%;
     height: 6rem;
     border: 1px solid #000000;
     margin-bottom: 1.5rem;
@@ -94,4 +100,117 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .form-thankyou-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #F6C6D2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .form-thankyou-overlay img {
+        width: 60rem;
+        margin-top: 25%;
+        margin-bottom: 2rem;
+        margin-left: 15%;
+    }
+    .form-thankyou-overlay p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-input, .form-input::placeholder {
+        font-size: 2.5rem;
+    }
+    .form {
+        width: 100%;
+        align-items: center;
+    }
+    .form-input-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .form-input {
+        width: 100%;
+        justify-self: center;
+    }
+    .form-thankyou-overlay img {
+        width: 50rem;
+        margin-top: 25%;
+        margin-bottom: 2rem;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 2rem;
+    }
+    .form-thankyou-overlay img {
+        width: 50rem;
+        margin-top: 25%;
+        margin-bottom: 2rem;
+        margin-left: 15%;
+    }
+    .form-thankyou-overlay p {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .header {
+        width: 45rem;
+        text-align-last: center;
+    }
+    .form-thankyou-overlay img {
+        width: 45rem;
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        width: 45rem;
+        text-align-last: center;
+    }
+    .form-thankyou-overlay img {
+        width: 40rem;
+        margin-top: 40%;
+        margin-left: 0%;
+    }
+    .form-thankyou-overlay p {
+        width: 80%;
+    }
+    .form-thankyou-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        width: 35rem;
+        text-align-last: start;
+    }
+}
+
+@media (max-width:360px) {
+    .form-thankyou-overlay img {
+        width: 35rem;
+    }
+}
+
+@media (max-width:300px) {
+    .form-thankyou-overlay img {
+        width: 30rem;
+    }
 }
