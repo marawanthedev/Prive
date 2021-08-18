@@ -49,7 +49,6 @@ const CalendarInput = ({ onChange, name }) => {
   const trueSelectedMonth = selectedMonth + 1
   const numOfDays = daysInMonth(trueSelectedMonth, new Date().getFullYear())
   const [label, setLabel] = useState('Preferred Date')
-  var date = new Date()
 
   const startDate = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
   const endDate = new Date(new Date().getFullYear(), new Date().getMonth(), 31)
@@ -106,7 +105,12 @@ const CalendarInput = ({ onChange, name }) => {
         <Calendar
           data-name='treatment'
           data-value={selectedDate}
-          onChange={setValue}
+          onChange={(e)=>{
+            console.log(value)
+            setValue(e);
+            console.log(value)
+
+          }}
           value={value}
           // @ts-ignore
           name={name}
