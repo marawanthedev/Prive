@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import styled from 'styled-components'
-import ChevronImg from '../../assets/svg/chevron.svg'
-import './treatement.css'
+import { useState } from "react";
+import styled from "styled-components";
+import ChevronImg from "../../assets/svg/chevron.svg";
+import "./treatement.css";
 const global = {
-  primary: '#77CFD2',
-  secondary: '#FD93DB',
-  tertiary: '#BEA960'
-}
+  primary: "#77CFD2",
+  secondary: "#FD93DB",
+  tertiary: "#BEA960",
+};
 const Dropdown = styled.ul`
   border: 1px solid #000000;
   max-width: -webkit-fill-available;
@@ -175,64 +175,64 @@ const Dropdown = styled.ul`
       }
     }
   }
-`
+`;
 
-const Select = ({ name, placeholder, children, data, onChange, className }) => {
-  const [value, setValue] = useState('Select treatment')
-  const [active, setActive] = useState(false)
-  const [selectedSub, setSelectedSub] = useState(false)
+const Select = ({ name, data, onChange, className }) => {
+  const [value, setValue] = useState("Select treatment");
+  const [active, setActive] = useState(false);
 
-  const handleExpansion = event => {
-    const e = event.target
-    setActive(!active)
+  const handleExpansion = (event) => {
+    const e = event.target;
+    setActive(!active);
 
-    if (e.getAttribute('data-value')) {
-      setValue(e.getAttribute('data-value'))
+    if (e.getAttribute("data-value")) {
+      setValue(e.getAttribute("data-value"));
     } else {
-      setValue('Select treatment')
+      setValue("Select treatment");
     }
 
-    onChange(event)
-  }
+    onChange(event);
+  };
 
-  const handleClick = e => {
-    console.log(e.target.value)
-    setValue(e.target.value)
+  const handleClick = (e) => {
+    setValue(e.target.value);
     const dropdown = {
       treatment: e.target.value,
-      type: 'treatment'
-    }
-    setActive(!active)
+      type: "treatment",
+    };
+    setActive(!active);
 
-    onChange(dropdown)
-  }
+    onChange(dropdown);
+  };
 
-  const toggleActive = e => {
-    const el = document.getElementById(`${e.target.getAttribute('data-value')}`)
+  const toggleActive = (e) => {
+    const el = document.getElementById(
+      `${e.target.getAttribute("data-value")}`
+    );
 
-    if (el.classList.contains('active-header')) {
-      el.classList.remove('active-header')
+    if (el.classList.contains("active-header")) {
+      el.classList.remove("active-header");
       // setActive(!active);
     } else {
-      el.classList.add('active-header')
+      el.classList.add("active-header");
     }
-  }
+  };
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: "100%" }}>
       <Dropdown
-        className={` dropdown-${active === true ? 'active' : 'closed'}`}
+        className={` dropdown-${active === true ? "active" : "closed"}`}
       >
         <span
           onClick={handleExpansion}
-          className='treatmentspan'
-          data-value='Select treatment'
+          className="treatmentspan"
+          data-value="Select treatment"
         >
           {value}
-          <img src={ChevronImg} alt='chevron' />
+          <img src={ChevronImg} alt="chevron" />
         </span>
         {data.map((object, index) => {
-          const newId = object.text.replace(' ', '_')
+          const newId = object.text.replace(" ", "_");
           return (
             <li
               key={index}
@@ -246,44 +246,44 @@ const Select = ({ name, placeholder, children, data, onChange, className }) => {
               <img
                 data-value={newId}
                 src={ChevronImg}
-                alt='chevron'
+                alt="chevron"
                 style={{
-                  marginLeft: '20px',
-                  width: '15px',
-                  transform: 'translateY(1.25rem)'
+                  marginLeft: "20px",
+                  width: "15px",
+                  transform: "translateY(1.25rem)",
                 }}
               />
               <ul data-value={newId}>
                 {object.treatments.map((treatment, index) => {
-                  const groupId = object.text.replace(' ', '-')
+                  const groupId = object.text.replace(" ", "-");
                   return (
                     <li data-value={newId}>
                       <input
-                        style={{ cursor: 'pointer' }}
+                        style={{ cursor: "pointer" }}
                         data-value={newId}
                         onClick={handleClick}
-                        type='radio'
-                        name='preferred-treatment'
+                        type="radio"
+                        name="preferred-treatment"
                         id={`input-${groupId}-${index}`}
                         value={`${groupId}: ${treatment.content}`}
                       />
                       <label
-                        style={{ cursor: 'pointer' }}
+                        style={{ cursor: "pointer" }}
                         data-value={newId}
                         htmlFor={`input-${groupId}-${index}`}
                       >
                         {treatment.content}
                       </label>
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </li>
-          )
+          );
         })}
       </Dropdown>
     </div>
-  )
-}
+  );
+};
 
-export default Select
+export default Select;

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import ChevronImg from '../../assets/svg/chevron.svg'
-import daysInMonth from '../../functions/daysInMonth/index'
-import Calendar from 'react-calendar'
-import calendarData from './calendarData'
-import './calendar.css'
+import { useState, useEffect } from "react";
+import styled from "styled-components";
+import ChevronImg from "../../assets/svg/chevron.svg";
+import daysInMonth from "../../functions/daysInMonth/index";
+import Calendar from "react-calendar";
+import calendarData from "./calendarData";
+import "./calendar.css";
 
 const CalendarWrap = styled.div`
   border: 1px solid #000000;
@@ -38,85 +38,80 @@ const CalendarWrap = styled.div`
       margin: 0;
     }
   }
-`
+`;
 
 const CalendarInput = ({ onChange, name }) => {
-  const [selectedMonth, setSelectedMonth] = useState(0)
-  const [numOfDaysArr, setNumOfDaysArr] = useState([])
-  const [active, setActive] = useState(false)
-  const [value, setValue] = useState(new Date())
-  const [selectedDate, setSelectedDate] = useState(value)
-  const trueSelectedMonth = selectedMonth + 1
-  const numOfDays = daysInMonth(trueSelectedMonth, new Date().getFullYear())
-  const [label, setLabel] = useState('Preferred Date')
+  // const [selectedMonth, setSelectedMonth] = useState(0);
+  // const [numOfDaysArr, setNumOfDaysArr] = useState([]);
+  const selectedMonth = 0;
+  const [active, setActive] = useState(false);
+  const [value, setValue] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(value);
+  const trueSelectedMonth = selectedMonth + 1;
+  const numOfDays = daysInMonth(trueSelectedMonth, new Date().getFullYear());
 
-  const startDate = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
-  const endDate = new Date(new Date().getFullYear(), new Date().getMonth(), 31)
   useEffect(() => {
-    let array = []
+    let array = [];
 
     for (let i = 1; i <= numOfDays; i++) {
-      array.push(i)
+      array.push(i);
     }
 
-    setNumOfDaysArr(array)
-  }, [numOfDays])
+    // setNumOfDaysArr(array);
+  }, [numOfDays]);
 
-  const handleClick = event => {
-    const e = event.target
-
-    setActive(!active)
-
+  const handleClick = (event) => {
     const newSelectedDate = {
       date: `${value.getDate()} ${
         calendarData[value.getMonth()].month
       } ${value.getFullYear()}`,
-      dateActive: 'date'
-    }
+      dateActive: "date",
+    };
 
     // @ts-ignore
-    setSelectedDate(newSelectedDate)
-    onChange(newSelectedDate)
-    setActive(!active)
+    setSelectedDate(newSelectedDate);
+    onChange(newSelectedDate);
+    setActive(!active);
+  };
 
-    setLabel(newSelectedDate.date)
-  }
-
-  useEffect(() => {
-    setActive(!active)
-  }, [value])
-  return (
-    <CalendarWrap>
-      {active ? (
+  const handleRendering = () => {
+    if (active) {
+      return (
+        <Calendar
+          data-name="treatment"
+          data-value={selectedDate}
+          onChange={(e) => {
+            setValue(e);
+            setActive(!active);
+          }}
+          onClick={handleClick}
+          value={value}
+          name={name}
+        />
+      );
+    } else {
+      const valueToBeDisplayed = String(value).substring(
+        0,
+        String(value).indexOf(":") - 2
+      );
+      return (
         <p
           onClick={handleClick}
           style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'baseline'
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "baseline",
           }}
         >
-          {label}
+          {valueToBeDisplayed ? valueToBeDisplayed : "Preferred Date"}
           <span>
-            <img src={ChevronImg} className='img-date' alt='chevron' />
+            <img src={ChevronImg} className="img-date" alt="chevron" />
           </span>
         </p>
-      ) : (
-        <Calendar
-          data-name='treatment'
-          data-value={selectedDate}
-          onChange={(e)=>{
-            console.log(value)
-            setValue(e);
-            console.log(value)
+      );
+    }
+  };
 
-          }}
-          value={value}
-          // @ts-ignore
-          name={name}
-        />
-      )}
-    </CalendarWrap>
-  )
-}
-export default CalendarInput
+  return <CalendarWrap>{handleRendering()}</CalendarWrap>;
+};
+export default CalendarInput;

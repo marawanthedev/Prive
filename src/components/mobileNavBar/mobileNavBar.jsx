@@ -4,7 +4,7 @@ const MobileNavBar = () => {
   const [hideNavBar, setHideNavBar] = useState(false);
   const links = ["Enquire", "See Treatments"];
   return (
-    <div className="navigation">
+    <div className="navigation" >
       <input
         type="checkbox"
         id="navi-toggle"
@@ -25,7 +25,7 @@ const MobileNavBar = () => {
                 key={index}
                 onClick={() => setHideNavBar(false)}
               >
-                <a href="#" className="navigation__link">
+                <a href="#landingHeader" className="navigation__link">
                   {link}
                 </a>
               </li>

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const LandingHeader = () => {
   return (
-    <div className='landingHeader'>
+    <div className='landingHeader' id='landingHeader'>
       <div className='landingHeader__side landingHeader__side__left'>
         <div className=' landingHeader__side__left__text landingHeader__side__left__text__upper'>
           <img src={LandingHeaderUpperText} alt='' />
