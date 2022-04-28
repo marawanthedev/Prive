@@ -1,10 +1,14 @@
 import "./mobileNavBar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const MobileNavBar = () => {
   const [hideNavBar, setHideNavBar] = useState(false);
-  const links = ["Enquire", "See Treatments"];
+  const links = [
+    { label: "Home", to: "/" },
+    { label: "Enquiry", to: "/enquiry" },
+  ];
   return (
-    <div className="navigation" >
+    <div className="navigation">
       <input
         type="checkbox"
         id="navi-toggle"
@@ -25,9 +29,10 @@ const MobileNavBar = () => {
                 key={index}
                 onClick={() => setHideNavBar(false)}
               >
-                <a href="#landingHeader" className="navigation__link">
-                  {link}
-                </a>
+                <Link className="navigation__link" to={link.to}>
+                  {" "}
+                  {link.label}
+                </Link>
               </li>
             );
           })}

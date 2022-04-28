@@ -5,7 +5,7 @@ import Button from "../button/button";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="navbar" >
+    <div className="navbar">
       <div className=" navbar__side navbar__side__right">
         <Link to="/">
           <div
@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className="navbar__side__left__buttons-container">
           <div className="navbar__side__left__buttons-container__item">
             <Link to="/enquiry">
-              <Button textContent="Book consultation" isPrimary={true}></Button>
+              <Button textContent="Enquiry" isPrimary={true}></Button>
             </Link>
           </div>
           <div className="navbar__side__left__buttons-container__item">
