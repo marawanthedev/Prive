@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Route exact path="/" component={LandingPage}></Route>
       <Route path="/enquiry" component={EnquiryPage}></Route>
-
     </div>
   );
 }

@@ -5,7 +5,7 @@
 
 .landing-about-us {
     width: 100%;
-    height: 52.5rem;
+    height: 55rem;
     background-color: #EB3737;
     display: flex;
     justify-content: flex-start;
@@ -24,7 +24,7 @@
 }
 
 .landing-about-us .left-section img {
-    transform: translate(26.5rem, -6rem);
+    transform: translate(20rem, -6rem);
 }
 
 .landing-about-us .right-section .text-content .header {
@@ -51,152 +51,120 @@
     line-height: 2.3rem;
 }
 
-@media (max-width:1320px) {
-    .landing-about-us .right-section {
-        width: 70%;
-        height: 100%;
-        padding: 0rem 10%;
-    }
+@media (max-width:1350px) {
+
     .landing-about-us .right-section .text-content .paragraph {
-        color: #FFFCFC;
-        margin-bottom: 3rem;
-        font-family: haboro;
+        font-size: 1.75rem;
+        line-height: 2.3rem;
+        margin-bottom: 4rem;
     }
+
     .landing-about-us .left-section img {
-        transform: translate(10rem, -5rem);
+        transform: translate(15rem, -6rem);
     }
 }
 
-@media (max-width:1100px) {
-    .landing-about-us .right-section {
-        width: 70%;
-        height: 100%;
-        padding: 0rem 2%;
-        margin-left: 10rem;
-    }
+@media (max-width:1200px) {
     .landing-about-us .right-section .text-content .paragraph {
+        font-size: 1.5rem;
         line-height: 2rem;
+        margin-bottom: 4rem;
     }
+
     .landing-about-us .left-section img {
-        transform: translate(5rem, -9rem);
-    }
-    .landing-about-us .right-section .text-content .header img {
-        width: 25rem;
+        transform: translate(10rem, -6rem);
     }
 }
 
-@media (max-width:900px) {
-    .landing-about-us {
-        flex-direction: column;
-        height: 100rem;
-        align-items: center;
+@media (max-width:1050px) {
+
+    .landing-about-us .left-section img {
+        width: 35rem;
+        transform: translate(8rem, -4rem);
+    }
+}
+
+@media (max-width:850px) {
+
+    .landing-about-us .left-section img {
         width: 100%;
     }
-    .landing-about-us .right-section {
-        width: 70%;
-        height: 100%;
-        padding: 0rem 10%;
-        display: flex;
+
+    .landing-about-us {
         flex-direction: column;
+        height: auto;
         align-items: center;
         justify-content: center;
     }
-    .landing-about-us .right-section .text-content .paragraph {
-        color: #FFFCFC;
-        margin-bottom: 3rem;
-        font-family: haboro;
-        margin-top: -6rem;
-    }
-    .landing-about-us .left-section img {
-        transform: translate(0%, -7%);
-        width: 40rem;
-    }
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(12rem, -7rem);
-        margin-bottom: 0;
-    }
+
+    .landing-about-us .left-section,
     .landing-about-us .right-section {
-        width: 80%;
-        height: 100%;
+        width: 50%;
+    }
+
+    .landing-about-us .right-section {
+        padding: 0 0;
+    }
+
+    .landing-about-us .left-section img,
+    .landing-about-us .right-section {
+        transform: translate(0, -7rem);
     }
 }
 
-@media (max-width:820px) {
+@media (max-width:600px) {
+
+    .landing-about-us .left-section,
     .landing-about-us .right-section {
-        width: 90%;
-        height: 100%;
+        width: 60%;
     }
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(17.5rem, -8rem);
-    }
-    .landing-about-us .right-section .text-content .paragraph {
-        margin-top: -7rem;
+
+    .landing-about-us .right-section .text-content .header {
+        width: 32rem;
     }
 }
 
-@media (max-width:720px) {
-    .landing-about-us .left-section img {
-        transform: translate(0%, -7%);
-        width: 35rem;
-    }
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(12rem, -14rem);
-    }
-    .landing-about-us .right-section .text-content .paragraph {
-        margin-top: -15rem;
-    }
-    .landing-about-us {
-        height: 92.5rem;
-        width: 100%;
-    }
-}
+@media (max-width:500px) {
 
-@media (max-width:650px) {
+    .landing-about-us .left-section img,
     .landing-about-us .right-section {
-        width: 90%;
-        height: 100%;
-    }
-    .landing-about-us .right-section .text-content .paragraph {
-        font-size: 1.7rem;
-        margin-top: -20-rem;
-    }
-    .landing-about-us .left-section img {
-        transform: translate(-4%, -7%);
-    }
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(10rem, -14rem);
-    }
-}
-
-@media (max-width:560px) {
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(0rem, -14rem);
-    }
-    .landing-about-us .left-section img {
-        transform: translate(-10%, -7%);
-    }
-    .landing-about-us .right-section {
-        width: 100%;
-        height: 100%;
-        padding: 0rem 15%;
+        transform: translate(0, -5rem);
     }
 }
 
 @media (max-width:400px) {
-    .landing-about-us .left-section img {
-        transform: translate(-10%, -7%);
-        width: 30rem;
+
+    .landing-about-us .left-section img,
+    .landing-about-us .right-section {
+        transform: translate(0, -3rem);
     }
+
+    .landing-about-us {
+        padding-bottom: 5rem;
+    }
+
+    .landing-about-us .right-section .text-content .header {
+        width: 25rem;
+    }
+
     .landing-about-us .right-section .text-content .header img {
-        transform: translate(5rem, -17rem);
+        width: 100%;
+    }
+
+    .landing-about-us .right-section .text-content .paragraph {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 4rem;
     }
 }
 
-@media (max-width:320px) {
-    .landing-about-us .right-section .text-content .header img {
-        transform: translate(5rem, -17rem);
+/* @media (max-width:800px) {
+    .landing-about-us .left-section img {
+        width: 32.5rem;
+        transform: translate(6rem, -4rem);
     }
-    .landing-about-us .right-section .text-content .paragraph {
-        font-size: 1.5rem;
+
+    .landing-about-us .right-section {
+        width: 50%;
     }
-}
+} */

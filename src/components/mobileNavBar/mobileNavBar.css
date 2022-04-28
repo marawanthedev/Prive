@@ -14,6 +14,7 @@
     /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); */
     text-align: center;
     z-index: 10000000;
+    user-select: none;
     cursor: pointer;
 }
 
@@ -27,6 +28,8 @@
     background: transparent;
     z-index: 1000000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    user-select: none;
+
 }
 
 .navigation__nav {
@@ -59,7 +62,8 @@
     z-index: 1000000;
 }
 
-.navigation__link:link, .navigation__link:visited {
+.navigation__link:link,
+.navigation__link:visited {
     display: inline-block;
     text-decoration: none;
     padding: 1rem 2rem;
@@ -71,12 +75,14 @@
     transition: all 0.5s;
 }
 
-.navigation__link:link span, .navigation__link:visited span {
+.navigation__link:link span,
+.navigation__link:visited span {
     display: inline-block;
     margin-right: 1.5rem;
 }
 
-.navigation__link:hover, .navigation__link:active {
+.navigation__link:hover,
+.navigation__link:active {
     background-position: 100%;
     color: black;
     transform: translateX(1rem);
@@ -87,17 +93,27 @@
     background-image: radial-gradient(white, white);
 }
 
+.navigation__checkbox~.navigation__nav {
+    display: none;
+    animation: fadeOut 0.2s ease-in-out forwards;
+}
+
 .navigation__checkbox:checked~.navigation__nav {
     width: 100%;
-    opacity: 1;
+    display: block;
+    animation: fadeIn 0.2s ease-in-out forwards;
+    animation-delay: 0.4s;
 }
 
 .navigation__icon {
     position: relative;
     margin-top: 1.5rem;
+    user-select: none;
 }
 
-.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
     width: 3rem;
     height: 3px;
     background-color: #EB3737;
@@ -105,7 +121,8 @@
     transform: rotate(180deg);
 }
 
-.navigation__icon::before, .navigation__icon::after {
+.navigation__icon::before,
+.navigation__icon::after {
     content: "";
     position: absolute;
     left: 0;
@@ -119,4 +136,29 @@
 
 .navigation__icon::after {
     top: -1.6rem;
+}
+
+
+@keyframes fadeIn {
+    from {
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
 }
